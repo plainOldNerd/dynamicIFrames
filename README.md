@@ -6,3 +6,4 @@ Ultimately, it is designed to split a single React page (a huge page, typically!
 This could save on loading time initially, perhaps increasing loading time for other menu items being clicked.
 
 To properly test whether this is truly possible, however, I will need to run this from a server to see if the client can get each page and throw it in the iFrame.
+I'm fairly confident in guessing that it is possible, since the src attribute of <script>, <iframe>, etc, is doing exactly that. It may require the use of BLOBs, but I'm sure it can be done.
