@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            const map = {
+                "page1li": "page1.html",
+                "page2li": "page2.html",
+                "page3li": "page3.html",
+                "page4li": "page4.html"
+            };
+
+            const changePage = function(target) {
+                document.getElementById('content').src = map[target.id];
+            };
+        </script>
+    </head>
+    <body>
+        <ul style="display:inline; list-style-type: none;">
+            <li onclick="changePage(this)" id="page1li"> Page 1 </li>
+            <li onclick="changePage(this)" id="page2li"> Page 2 </li>
+            <li onclick="changePage(this)" id="page3li"> Page 3 </li>
+            <li onclick="changePage(this)" id="page4li"> Page 4 </li>
+        </ul>
+        <iframe src="page1.html" id="content" width="100%"></iframe>
+    </body>
+</html>
